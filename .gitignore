@@ -127,5 +127,7 @@ venv.bak/
 # mypy
 .mypy_cache/
 
+# azure key file
+azure.key
 
 # End of https://www.gitignore.io/api/macos,python
