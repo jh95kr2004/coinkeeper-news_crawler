@@ -27,10 +27,10 @@ response.raise_for_status()
 search_results = response.json()
 
 for article in search_results["value"] :
-    print(article["name"])
-    print(article["description"])
-    print(article["url"])
+    print(article["name"].encode("utf-8"))
+    print(article["description"].encode("utf-8"))
+    print(article["url"].encode("utf-8"))
     if "image" in article :
-        print(article["image"])
-    print(article["datePublished"])
+        print(article["image"].encode("utf-8"))
+    print(article["datePublished"].encode("utf-8"))
     print()
